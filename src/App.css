@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
