@@ -1,5 +1,7 @@
-import React from 'react';
+import logo from './logo.png';
 import './App.css';
+
+import React from 'react';
 
 class App extends React.Component {
 
@@ -20,7 +22,7 @@ class App extends React.Component {
         isDone: false,
         timeAdded: String( "Added on " + currentdate.getDate() + "/"+ (currentdate.getMonth()+1)  + "/" + currentdate.getFullYear() + " at "  + currentdate.getHours() + ":"  + currentdate.getMinutes() + ":" + currentdate.getSeconds() )
       };
-      // ... means append all the values from current list state to list local var
+
       const list = [...this.state.list];
       list.push( newItem );
 
@@ -95,7 +97,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <div className="pb-4">
-            <img src="https://img.icons8.com/color/96/000000/todo-list--v2.png"/>
+            <img src={logo}/>
           </div>
           <div className="list-group pb-4">
           <div className="input-group input-group-lg gap-2">
